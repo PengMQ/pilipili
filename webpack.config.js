@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const APP_DIR = path.resolve(__dirname, 'src/app');
+const APP_DIR = path.resolve(__dirname, 'src/js');
 const BUILD_DIR = path.resolve(__dirname, 'src/public');
 
 const config = {
@@ -20,6 +20,10 @@ const config = {
                     cacheDirectory: true,
                     presets: ['react', 'es2015']
                 }
+            },
+            {
+                test: /\.scss$/,
+                loaders: ['style', 'css', 'sass']
             }
 
         ]
