@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
-const APP_DIR = path.resolve(__dirname, 'src/js');
+const APP_DIR = path.resolve(__dirname, 'src');
 const BUILD_DIR = path.resolve(__dirname, 'src/public');
 
 const config = {
@@ -26,7 +26,7 @@ const config = {
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract(
-                    'style', // The backup style loader
+                    'style', 
                     'css?sourceMap!sass?sourceMap'
                 )
             }

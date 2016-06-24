@@ -1,8 +1,9 @@
+require('../../stylesheets/components/perTypeVideos.scss');
 import React, {PropTypes} from 'react'
 import VideosList from './VideosList'
 
 const PerTypeVideos = ({perTypeVideos}) => (
-    <li>
+    <li className='per-type-videos'>
         <p>{perTypeVideos.videoType}</p>
         <VideosList videosList={perTypeVideos.videos}/>
         <div className='add-new-video'><button>+</button></div>
