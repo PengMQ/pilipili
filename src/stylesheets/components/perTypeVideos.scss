@@ -1,5 +1,12 @@
+@import "../../stylesheets/base/typography.scss";
+
 .per-type-videos {
   background: #fff;
   padding: 1rem;
   margin: 1rem 0;
+}
+
+.per-type-videos--title {
+  font-size: $large;
+  margin: 0 0 1rem 0;
 }

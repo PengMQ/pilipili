@@ -4,7 +4,7 @@ import VideosList from './VideosList'
 
 const PerTypeVideos = ({perTypeVideos}) => (
     <li className='per-type-videos'>
-        <p>{perTypeVideos.videoType}</p>
+        <p className='per-type-videos--title'>{perTypeVideos.videoType}</p>
         <VideosList videosList={perTypeVideos.videos}/>
         <div className='add-new-video'><button>+</button></div>
     </li>

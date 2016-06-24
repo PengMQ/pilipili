@@ -2,8 +2,8 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
-const APP_DIR = path.resolve(__dirname, 'src');
-const BUILD_DIR = path.resolve(__dirname, 'src/public');
+const APP_DIR = path.resolve(__dirname, 'src/');
+const BUILD_DIR = path.resolve(__dirname, 'src/public/');
 
 const config = {
     entry: APP_DIR + '/index.js',
@@ -12,6 +12,10 @@ const config = {
         filename: 'bundle.js'
     },
     devtool: 'source-map',
+    devServer: {
+        inline:true,
+        port: 8008
+    },
     module: {
         loaders: [
             {
@@ -29,7 +33,8 @@ const config = {
                     'style', 
                     'css?sourceMap!sass?sourceMap'
                 )
-            }
+            },
+            { test: /\.(png|jpg)$/, loader: 'file-loader' }
 
         ]
     },

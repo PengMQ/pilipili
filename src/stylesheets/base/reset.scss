@@ -1,6 +1,9 @@
+@import "../../stylesheets/base/colors.scss";
+
 body {
   margin: 0;
-  background: #f2f2f2;
+  background: $light-gray;
+  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
 }
 
 ul, li {
