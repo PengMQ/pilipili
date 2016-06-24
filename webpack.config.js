@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 const APP_DIR = path.resolve(__dirname, 'src/js');
@@ -24,11 +25,18 @@ const config = {
             },
             {
                 test: /\.scss$/,
-                loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
+                loader: ExtractTextPlugin.extract(
+                    'style', // The backup style loader
+                    'css?sourceMap!sass?sourceMap'
+                )
             }
 
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('index.css')
+    ]
+
 
 };
 
