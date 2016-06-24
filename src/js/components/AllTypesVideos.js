@@ -1,7 +1,8 @@
+require('../../stylesheets/components/allTypesVideos.scss');
 import React, {PropTypes} from 'react'
 import PerTypeVideos from './PerTypeVideos'
 
-const AllTypeVideos = ({allTypesVideos})=>(
+const AllTypesVideos = ({allTypesVideos})=>(
     <section className='all-videos'>
         <ul>
             {
@@ -14,8 +15,8 @@ const AllTypeVideos = ({allTypesVideos})=>(
     </section>
 );
 
-AllTypeVideos.propTypes =  {
+AllTypesVideos.propTypes =  {
     allTypesVideos: PropTypes.array.isRequired
 };
 
-export default AllTypeVideos;
+export default AllTypesVideos;

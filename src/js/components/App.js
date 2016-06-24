@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import AllTypeVideos from './AllTypeVideos'
+import AllTypeVideos from './AllTypesVideos'
 import Footer from './Footer'
 
 import {getAllVideos} from '../helpers/data'
