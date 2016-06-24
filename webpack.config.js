@@ -10,6 +10,7 @@ const config = {
         path: BUILD_DIR,
         filename: 'bundle.js'
     },
+    devtool: 'source-map',
     module: {
         loaders: [
             {
@@ -23,7 +24,7 @@ const config = {
             },
             {
                 test: /\.scss$/,
-                loaders: ['style', 'css', 'sass']
+                loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
             }
 
         ]
