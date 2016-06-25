@@ -6,7 +6,10 @@ const PerTypeVideos = ({perTypeVideos}) => (
     <li className='per-type-videos'>
         <p className='per-type-videos--title'>{perTypeVideos.videoType}</p>
         <VideosList videosList={perTypeVideos.videos}/>
-        <div className='add-new-video'><button>+</button></div>
+        <div className='add-new-video'>
+            <span className='icon-add'></span>
+            <span>Add more items</span>
+        </div>
     </li>
 );
 PerTypeVideos.propTypes = {
