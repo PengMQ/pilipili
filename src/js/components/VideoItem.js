@@ -12,13 +12,13 @@ const VideoItem = ({video}) => (
         <sapn className='video-item--title inline-block full-width'>{video.title}</sapn>
         <span className='video-item--action clearfix inline-block full-width'>
             <span className='float-left inline-block half-width'>
-                <span className='icon-gift'></span>
-                <span className='video-item--id'>{video.id} he</span>
+                <span className='icon-gift vertical-middle'></span>
+                <span className='video-item--id vertical-middle'>{video.id} he</span>
             </span>
 
             <span className='inline-block float-right'>
-                <span className='icon-comment'></span>
-                <span className='video-item--comment'>{video.alt}</span>
+                <span className='icon-comment vertical-middle'></span>
+                <span className='video-item--comment vertical-middle'>{video.alt}</span>
             </span>
         </span>
     </li>
