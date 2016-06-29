@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 const APP_DIR = path.resolve(__dirname, 'src/');
-const BUILD_DIR = path.resolve(__dirname, 'src/public/');
+const BUILD_DIR = path.resolve(__dirname, 'build/');
 
 const config = {
     entry: APP_DIR + '/index.jsx',
@@ -14,7 +14,7 @@ const config = {
     devtool: 'source-map',
     devServer: {
         inline:true,
-        port: 8008
+        port: 8080
     },
     module: {
         loaders: [
