@@ -1,7 +1,7 @@
 require('../../stylesheets/utils/layout.scss');
 require('../../stylesheets/components/videosList.scss');
 import React, {PropTypes} from 'react'
-import VideoItem from './VideoItem'
+import VideoItem from './VideoItem.jsx'
 
 const VideosList = ({videosList}) => (
     <ul className='videos-list clearfix'>

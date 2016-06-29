@@ -1,6 +1,6 @@
 require('../../stylesheets/components/allTypesVideos.scss');
 import React, {PropTypes} from 'react'
-import PerTypeVideos from './PerTypeVideos'
+import PerTypeVideos from './PerTypeVideos.jsx'
 
 const AllTypesVideos = ({allTypesVideos})=>(
     <section className='all-videos'>
