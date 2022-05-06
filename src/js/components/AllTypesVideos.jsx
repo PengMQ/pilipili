@@ -22,5 +22,6 @@ AllTypesVideos.propTypes = {
 };
 
 const name = 'NANA'
+const address = 'Chengdu city'
 
 export default AllTypesVideos;
