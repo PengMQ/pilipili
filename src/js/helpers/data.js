@@ -1,7 +1,8 @@
 //Test git rewrite history start
 const MUSIC = 'music'
+const DANCE = 'dance'
 //Test git rewrite history end
-export const getAllVideos = ()=> {
+export const getAllVideos = () => {
     return [
         {
             videoType: MUSIC,
@@ -15,7 +16,7 @@ export const getAllVideos = ()=> {
         },
 
         {
-            videoType: 'dance',
+            videoType: DANCE,
             videos: [
                 {id: 1, imgUrl: 'imgs/dance-a.jpg', alt: 'aaaaa', title: 'Title| Big bang big bang'},
                 {id: 2, imgUrl: 'imgs/dance-b.jpg', alt: 'bbbbb', title: 'Title| Big bang big bang'},
