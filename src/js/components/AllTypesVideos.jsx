@@ -1,3 +1,5 @@
+import Header from "./Header";
+
 require('../../stylesheets/components/allTypesVideos.scss');
 import React, {PropTypes} from 'react'
 import PerTypeVideos from './PerTypeVideos.jsx'
@@ -18,5 +20,7 @@ const AllTypesVideos = ({allTypesVideos})=>(
 AllTypesVideos.propTypes =  {
     allTypesVideos: PropTypes.array.isRequired
 };
+
+const name = 'NANA'
 
 export default AllTypesVideos;
